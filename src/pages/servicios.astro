@@ -1,0 +1,58 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderHalf from "../components/HeaderHalf.astro";
+import { Image } from 'astro:assets';
+
+import servicio1 from "../images/servicios/servicio1.png"
+
+const title = "Comprometidos con la satisfacción total de nuestros clientes"
+const description = "Somos una firma de consultoría tributaria con más de 15 años de experiencia que busca resolver problemas e inquietudes en materia fiscal a nuestros clientes."
+---
+
+<Layout title="Meta Consulting.">
+    <HeaderHalf title={title} description={description}></HeaderHalf>
+
+    <main class="uk-container-large uk-margin-auto">
+        <h1 class="title primary uk-text-center uk-padding uk-text-bold">Nuestros Servicios</h1>
+        <section>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class= "uk-cover-container uk-cover-container">
+                    <Image src={servicio1} alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Servicio 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <Image src={servicio1} alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Servicio 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class= "uk-cover-container uk-cover-container">
+                    <Image src={servicio1} alt="" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Servicio 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

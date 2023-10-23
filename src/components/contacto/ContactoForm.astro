@@ -1,0 +1,43 @@
+---
+import ButtonPrimary from '../../components/ButtonPrimary.astro';
+
+
+
+---
+
+<div class="uk-padding uk-flex uk-flex-middle">
+    <div>
+        <h2 class="subtitle white uk-text-bold" >¿Quieres saber más? ¡Contáctanos</h2>
+    
+        <form>
+            <div class="uk-margin">
+                <lable class="paragraph uk-text-bold white">Nombre</lable>
+                <input class="input" type="text" placeholder="Large" aria-label="Large">
+            </div>
+        
+            <div class="uk-margin">
+                <lable class="paragraph uk-text-bold white">Correo electrónico</lable>
+                <input class="input" type="text" placeholder="Default" aria-label="Default">
+            </div>
+        
+            <div class="uk-margin">
+                <lable class="paragraph uk-text-bold white">Teléfono</lable>
+                <input class="input" type="text" placeholder="Small" aria-label="Small">
+            </div>
+          
+        </form>
+        <ButtonPrimary class="uk-margin-top" name="Conocenos" route="/nosotros"></ButtonPrimary>
+    </div>
+</div>
+
+<style lang="scss">
+    input {
+    display: block;
+    width: 70%;
+    height: 30px;
+    padding: 8px 16px;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    }
+</style>

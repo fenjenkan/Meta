@@ -1,0 +1,42 @@
+---
+import {services} from '../../data/services.ts';
+---
+<div>
+    <div class="uk-position-relative uk-visible-toggle uk-light " tabindex="-1" uk-slider="center: true">
+        <ul class="uk-slider-items uk-grid uk-grid-match"
+            uk-height-viewport="offset-top: true; offset-bottom: 30">
+            {
+                services.map(service => (
+            <li class="uk-width-1-1@m ">
+                <div uk-grid>
+                    <div class="uk-width-1-2@m max-container uk-padding" >
+                        <div class="uk-padding">
+                            <h1 class="title">{service.titulo}</h1>
+                            <p class="paragraph white">{service.descripcion}</p>
+                        </div>
+                       
+                    </div>
+                    <div class="uk-cover-container uk-width-expand@m" >
+                        <img src={service.imagen} alt="" uk-cover>
+                    </div>
+                </div>
+            </li>      
+                ))
+            }
+        
+
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+
+    </div>
+</div>
+
+<style>
+    .max-container{
+        background-color: var(--primary);
+    }
+</style>

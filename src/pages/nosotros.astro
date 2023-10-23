@@ -1,0 +1,93 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeaderHalf from "../components/HeaderHalf.astro";
+import { Image } from 'astro:assets';
+import iconmaleta from "../images/icons/icon-escudo.svg";
+import iconescudo from "../images/icons/icon-maleta.svg";
+import iconbanco from "../images/icons/icon-bank.svg";
+import persona from "../images/people/img-gonzalo.png"
+import "../styles/nosotros.scss";
+
+const title = "Comprometidos con la satisfacción total de nuestros clientes"
+const description = "Somos una firma de consultoría tributaria con más de 15 años de experiencia que busca resolver problemas e inquietudes en materia fiscal a nuestros clientes."
+---
+
+<Layout title="Meta Consulting.">
+    <HeaderHalf title={title} description={description}></HeaderHalf>
+    <main class="uk-container-large uk-margin-auto uk-padding">
+        <section>
+            <div class="uk-child-width-expand@s" uk-grid>
+                <div class="uk-flex">
+                    <Image  src={iconescudo} alt="escudo"/>
+                    <div>
+                        <h4 class="subtitle primary">Sobre nuestro trabajo</h4>
+                        <p class="paragraph">Te apoyamos en materia de carga fiscal mediante la aplicación y planeación de estrategias fiscales efectivas.</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <Image src={iconmaleta} alt="maleta"/>
+                    <div>
+                        <h4 class="subtitle primary">Sobre nuestro trabajo</h4>
+                        <p class="paragraph">Te apoyamos en materia de carga fiscal mediante la aplicación y planeación de estrategias fiscales efectivas.</p>
+                    </div>
+                </div>
+                <div class="uk-flex">
+                    <Image src={iconbanco} alt="banco"/>
+                    <div>
+                        <h4 class="subtitle primary">Sobre nuestro trabajo</h4>
+                        <p class="paragraph">Te apoyamos en materia de carga fiscal mediante la aplicación y planeación de estrategias fiscales efectivas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="uk-position-relative uk-height-1-1 uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: false">
+
+                <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 10">
+                    <li>
+                        <div class="uk-padding">
+							<h1 class="uk-text-bold subtitle white">META CONSULTORES</h1>
+							<p  class="subtitle white">Expertos en consultoría</p>
+							<p  class="paragraph white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor libero dignissimos magni soluta, incidunt quas sit porro molestiae in odit sapiente assumenda possimus illum maxime aperiam quod ab facilis.
+							Laudantium dolore sed doloremque temporibus animi,</p>
+                            
+						</div>
+                        <div class="cover">
+                            <Image class="img" src={persona} alt="" >
+                        </div>
+                       
+                    </li>
+                    <li>
+                       <div class="uk-padding">
+							<h1 class="uk-text-bold subtitle white">META CONSULTORES</h1>
+							<p  class="subtitle white">Expertos en consultoría</p>
+							<p  class="paragraph white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor libero dignissimos magni soluta, incidunt quas sit porro molestiae in odit sapiente assumenda possimus illum maxime aperiam quod ab facilis.
+							Laudantium dolore sed doloremque temporibus animi,</p>
+                            
+						</div>
+                        <div class="cover">
+                            <Image class="img" src={persona} alt="" >
+                        </div>
+                    </li>
+                    <li>
+                       <div class="uk-padding">
+							<h1 class="uk-text-bold subtitle white">META CONSULTORES</h1>
+							<p  class="subtitle white">Expertos en consultoría</p>
+							<p  class="paragraph white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor libero dignissimos magni soluta, incidunt quas sit porro molestiae in odit sapiente assumenda possimus illum maxime aperiam quod ab facilis.
+							Laudantium dolore sed doloremque temporibus animi,</p>
+                            
+						</div>
+                        <div class="cover">
+                            <Image class="img" src={persona} alt="" >
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
+            
+        </section>
+       
+    </main>
+</Layout>

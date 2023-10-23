@@ -1,0 +1,20 @@
+.hero{
+    background-image: url('../images/img-banner.png'); /* Ruta de tu imagen */
+    background-size: cover; /* La imagen se ajustará al tamaño del contenedor sin repetirse */
+    background-position: center center; /* La imagen se centrará en el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 50vh;
+  }
+  main > section{
+    .uk-flex > div{
+        padding: 12px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* Estilos específicos para dispositivos móviles */
+    .hero {
+        padding-top: 100px;
+        height: 100%;
+    }
+  }

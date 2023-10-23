@@ -1,0 +1,26 @@
+---
+const { title,description } = Astro.props;
+import "../styles/Header-half.scss";
+---
+
+<section class="hero" id="hero">
+    <div class="services uk-height-1-1 uk-container-large uk-margin-auto">
+        <div
+            class="uk-child-width-expand@s uk-height-1-1 uk-flex uk-flex-middle" uk-grid>
+            <div>
+                <div class="uk-padding uk-width-2-3">
+                    <div>
+                        <h1 class="uk-text-bold title white">
+                            {title}
+                        </h1>
+
+                        <p class="paragraph white">
+                           {description}
+                        </p>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+</section>

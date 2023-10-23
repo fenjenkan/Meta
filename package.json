@@ -10,6 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.2.4"
+    "astro": "^3.2.4",
+    "uikit": "^3.17.1"
+  },
+  "devDependencies": {
+    "@types/uikit": "^3.14.1",
+    "sass": "^1.69.3"
   }
 }

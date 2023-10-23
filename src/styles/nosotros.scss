@@ -1,0 +1,24 @@
+.uk-slideshow-items{
+    background-color: var(--primary);
+}
+.cover {
+    width: 50%; /* Establece el ancho deseado para el contenedor */
+    height: 650px; /* Establece la altura deseada para el contenedor */
+    overflow: hidden; /* Oculta el exceso de imagen si la imagen es más grande */
+  }
+  
+  .cover .img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor, recortando si es necesario */
+  }
+
+@media (max-width: 767px) {
+    /* Estilos específicos para dispositivos móviles */
+    .uk-slideshow-items{
+       height: 100vh;
+    }
+    .cover {
+        width: 100%;
+    }
+  }

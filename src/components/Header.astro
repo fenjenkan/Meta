@@ -1,0 +1,73 @@
+---
+import "../styles/Header.scss";
+
+
+---
+
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; end: + *; ">
+  <nav class="uk-navbar-container header" id="header">
+    <div class="uk-container">
+      <div uk-navbar>
+        <div class="uk-navbar-left">
+          <img src="../images/Logo1.png" width="60" alt="" id="imagen" />
+        </div>
+        <div class="uk-navbar-right uk-visible@s">
+          <ul class="uk-navbar-nav">
+            <li class="uk-text-bold"><a href="/">Inicio</a></li>
+            <li class="uk-text-bold"><a href="/nosotros/">Nosotros</a></li>
+            <li class="uk-text-bold"><a href="/servicios/">Servicios</a></li>
+            <li class="uk-text-bold"><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="uk-navbar-right uk-hidden@s">
+          <a
+            class="uk-navbar-toggle uk-navbar-toggle-animate"
+            uk-toggle="target: #offcanvas-nav-primary"
+            uk-navbar-toggle-icon
+            href="#"></a>
+          <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+              <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-text-bold "><a href="/">Inicio</a></li>
+                <li class="uk-text-bold "><a href="/nosotros/">Nosotros</a></li>
+                <li class="uk-text-bold "><a href="/servicios/">Servicios</a></li>
+                <li class="uk-text-bold "><a href="/contacto/">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<style lang="scss">
+  .uk-navbar-toggle {
+    color: var(--secondary) !important;
+  }
+  .uk-navbar-nav , .uk-nav{
+     li > a{
+      color:  var(--secondary) !important;
+    }
+  }
+  .uk-navbar-sticky {
+    background-color: aliceblue !important;
+    .uk-navbar-nav > li > a {
+      color: var(--primary) !important;
+    }
+  }
+</style>
+
+<script>
+  window.addEventListener("scroll", () => {
+    let value = window.scrollY;
+    var header = document.getElementById("header");
+    const imagen = document.getElementById("imagen");
+    header.classList.toggle("sticky", value > 0);
+    if (value > 0) {
+      imagen.src = "../images/LOGO.png";
+    } else {
+      imagen.src = "../images/Logo1.png";
+    }
+  });
+</script>
