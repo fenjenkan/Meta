@@ -16,8 +16,18 @@
     --secondary: #b9d5da;
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: 'Adam';
     background-size: 224px;
+  }
+
+  @font-face {
+    font-family: 'Adam';
+    src: url('/fonts/Adam-Light.ttf') format('woff'),
+          url('/fonts/Adam-Bold.ttf') format('woff'),
+          url('/fonts/Adam-Medium.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
  
   .colorPrincipalBG {
@@ -37,7 +47,7 @@
   //tipografia
   
   h1, h2, h3, h4, h5, h6 ,p,a {
-    font-family: 'Nunito Sans', sans-serif !important;
+    font-family: 'Adam', sans-serif !important;
     color: black;
   }
 

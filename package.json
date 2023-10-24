@@ -7,9 +7,11 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@astrojs/netlify": "^3.0.3",
     "astro": "^3.2.4",
     "uikit": "^3.17.1"
   },
