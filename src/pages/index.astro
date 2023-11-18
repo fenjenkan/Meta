@@ -3,6 +3,7 @@ import ButtonSecondary from '../components/ButtonSecondary.astro';
 import SliderHalf from '../components/Home/SliderHalf.astro';
 import SliderServices from '../components/Home/SliderServices.astro';
 import Layout from '../layouts/Layout.astro';
+import video from "../video/video.mp4";
 
 
 import "../styles/index.scss";
@@ -17,8 +18,7 @@ import "../styles/index.scss";
 						<div class="uk-padding">
 							<h1 class="uk-text-bold title white">META CONSULTORES</h1>
 							<p  class="subtitle white">Expertos en consultoría</p>
-							<p  class="paragraph white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor libero dignissimos magni soluta, incidunt quas sit porro molestiae in odit sapiente assumenda possimus illum maxime aperiam quod ab facilis.
-							Laudantium dolore sed doloremque temporibus animi,</p>
+							<p  class="paragraph white">Somos una firma consultora en recursos humanos, consciente de que el talento humano es el principal recurso de las organizaciones, por eso enfocamos nuestros esfuerzos en gestionarlo de manera eficiente. </p>
 						</div>
 					</div>
 					<div>
@@ -35,12 +35,12 @@ import "../styles/index.scss";
 		<section class="uk-container" id="nosotros">
 			<div class=" uk-child-width-expand@s  uk-padding" uk-grid>
 				<div  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-					<video controls  src="video/video.mp4"  poster="images/LOGO.png" width="100%"></video>
+					<video controls  src={video}  poster="images/LOGO.png" width="100%"></video>
 				 </div>
 				<div class="uk-flex uk-flex-middle" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
 					<div>
 						<h2 class="subtitle uk-text-bold primary">NOSOTROS</h2>
-						<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi consequatur molestias molestiae quaerat. Sapiente n</p>
+						<p class="paragraph">Somos un grupo de personas, que se encarga de gestionar la calidad de vida laboral y profesional de otras personas. En Meta Consultores somos consciente de que el talento humano es el principal recurso de las organizaciones, por eso enfocamos nuestros esfuerzos en gestionarlo de manera eficiente. </p>
 						<ButtonSecondary name="Conocenos" route="/nosotros"></ButtonSecondary>
 					</div>
 				</div>
