@@ -2,9 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 import HeaderHalf from "../components/HeaderHalf.astro";
 import { Image } from 'astro:assets';
-import iconmaleta from "../images/icons/icon-escudo.svg";
-import iconescudo from "../images/icons/icon-maleta.svg";
-import iconbanco from "../images/icons/icon-bank.svg";
+import confianza from "../images/icons/confianza.svg";
+import pasion from "../images/icons/pasion.svg";
+import compromiso from "../images/icons/compromiso.svg";
+import bienestar from "../images/icons/bienestar.svg";
 
 import ivan from "../images/people/ivan.png"
 import juanse from "../images/people/juanse.png"
@@ -20,28 +21,28 @@ const description = "Somos una firma consultora en recursos humanos, con experie
         <section>
             <div class="uk-child-width-expand@s" uk-grid>
                 <div class="uk-flex uk-flex-middle">
-                    <Image  src={iconescudo} alt="escudo"/>
+                    <Image  src={compromiso} alt="compromiso" width={65}/>
                     <div>
                         <h4 class="subtitle primary">Compromiso y profesionalismo</h4>
                         <p class="paragraph">Hacemos nuestros los objetivos de nuestros clientes, con agilidad y vocación de servicio y promoviendo las soluciones mas adecuadas, bajo los marcos correspondientes. </p>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-middle">
-                    <Image src={iconmaleta} alt="maleta"/>
+                    <Image src={pasion} alt="pasion" width={65}/>
                     <div>
                         <h4 class="subtitle primary">Pasión por las personas. </h4>
                         <p class="paragraph">Conectamos de manera autentica con las personas que llegan a nosotros, respectamos la diversidad, escuchamos, avanzamos y generamos valor</p>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-middle">
-                    <Image src={iconbanco} alt="banco"/>
+                    <Image src={confianza} alt="confianza" width={65}/>
                     <div>
                         <h4 class="subtitle primary">Confianza en nuestros grupos de interés</h4>
                         <p class="paragraph">Acompañamos con un seguimiento real, y nos adaptamos a las necesidades y expectativas de nuestros clientes en general.</p>
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-middle">
-                    <Image src={iconbanco} alt="banco"/>
+                    <Image src={bienestar} alt="bienestar" width={65}/>
                     <div>
                         <h4 class="subtitle primary">Bienestar</h4>
                         <p class="paragraph">Creemos firmemente en organizaciones que faciliar el bienestar profesional y personal de su talento, para mejorar sus resultados a través de la gestión de experiencias en sus procesos de rrhh</p>
