@@ -9,24 +9,25 @@ import ButtonPrimary from '../../components/ButtonPrimary.astro';
     <div>
         <h2 class="subtitle white uk-text-bold" >¿Quieres saber más? ¡Contáctanos</h2>
     
-        <form>
+        <form action="https://formspree.io/f/xayggzna" method="POST">
             <div class="uk-margin">
                 <lable class="paragraph uk-text-bold white">Nombre</lable>
-                <input class="input" type="text" placeholder="" aria-label="Large">
+                <input class="input" id="name" name="name" type="text" placeholder="" aria-label="Large">
             </div>
         
             <div class="uk-margin">
                 <lable class="paragraph uk-text-bold white">Correo electrónico</lable>
-                <input class="input" type="text" placeholder="" aria-label="Default">
+                <input class="input" id="email" name="email" type="email" placeholder="" aria-label="Default">
             </div>
         
             <div class="uk-margin">
                 <lable class="paragraph uk-text-bold white">Teléfono</lable>
-                <input class="input" type="text" placeholder="" aria-label="Small">
-            </div>
-          
+                <input class="input" id="phone" name="phone" type="text" placeholder="" aria-label="Small">
+            </div> 
+            <butto class="btn-primary uk-margin-top" type="submit">Enviar</butto>
+
         </form>
-        <ButtonPrimary class="uk-margin-top" name="Conocenos" route="/nosotros"></ButtonPrimary>
+       
     </div>
 </div>
 
